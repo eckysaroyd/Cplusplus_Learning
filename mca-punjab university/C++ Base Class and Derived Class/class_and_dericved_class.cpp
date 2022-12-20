@@ -4,12 +4,19 @@ using namespace std;
 class students{
 	public:
 		void displayStudents(){
-			cout<<"These are students Data";
+			cout<<"These are students Data"<<endl;
+		}
+};
+class teachers:public students{
+	public:
+		void displayTeachers(){
+			cout<<"Now is time for teachers"<<endl;
 		}
 };
 int main (){
-	students stud;
+	teachers members;
 	
-	stud.displayStudents();
+	members.displayStudents();
+	members.displayTeachers();
 	return 0;
 }
